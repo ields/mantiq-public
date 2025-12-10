@@ -272,3 +272,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
     overscroll-behavior: none;
   }
 }
+
+html[dir="rtl"] .fold {
+  transform: scaleX(-1);
+}
