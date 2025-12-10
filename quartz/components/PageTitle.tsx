@@ -8,13 +8,21 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
   const baseDir = pathToRoot(fileData.slug!)
   return (
     <h2 class={classNames(displayClass, "page-title")}>
-      <a href={baseDir} class="page-title-link">
-        <img src="/http://288.epy.jp/img/brand/logic/logic.png" alt={title} class="page-title-logo" />
-      </a>
+      <a href={baseDir}>{title}</a>
     </h2>
   )
 }
-
+     ///const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {
+  ///const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
+  ///const baseDir = pathToRoot(fileData.slug!)
+  ///return (
+    ///<h2 class={classNames(displayClass, "page-title")}>
+    ///  <a href={baseDir} class="page-title-link">
+     ///   <img src="/logo.png" alt={title} class="page-title-logo" />
+    ////  </a>
+   /// </h2>
+  ///)
+///}
 
 PageTitle.css = `
 .page-title {
