@@ -273,6 +273,3 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
   }
 }
 
-html[dir="rtl"] .fold {
-  transform: scaleX(-1);
-}
