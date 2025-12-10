@@ -45,7 +45,7 @@ const config: QuartzConfig = {
           gray: "#30363d",
           darkgray: "#8b949e",
           dark: "#c9d1d9",
-          secondary: "#58a6ff",
+          secondary: "#1fe0d0ff",
           tertiary: "#3fb950",
           highlight: "rgba(56, 139, 253, 0.15)",
           textHighlight: "#bb800966",
@@ -95,3 +95,15 @@ const config: QuartzConfig = {
 }
 
 export default config
+
+/// darkMode: {
+//  light: "#0d1117",              // main background
+//  lightgray: "#161b22",          // secondary background / cards
+//  gray: "#30363d",               // borders / subtle separators
+//  darkgray: "#8b949e",           // muted text
+//  dark: "#c9d1d9",               // main text color
+// secondary: "#58a6ff",          // primary accent / links
+//  tertiary: "#3fb950",           // secondary accent / success
+//  highlight: "rgba(56, 139, 253, 0.15)", // selection / hover highlight
+//  textHighlight: "#bb800966",    // inline text highlight
+//}
