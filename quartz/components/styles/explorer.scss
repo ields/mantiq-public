@@ -7,12 +7,12 @@
       transition: transform 300ms ease-in-out;
     }
     &.lock-scroll > :not(.sidebar.left:has(.explorer)) {
-      transform: translateX(100dvw);
+      transform: translateX(-100dvw);
       transition: transform 300ms ease-in-out;
     }
 
     // Sticky top bar (stays in place when scrolling down on mobile).
-    .sidebar.left:has(.explorer) {
+    .sidebar.right:has(.explorer) {
       box-sizing: border-box;
       position: sticky;
       background-color: var(--light);
