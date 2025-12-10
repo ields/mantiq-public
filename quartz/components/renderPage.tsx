@@ -257,7 +257,7 @@ export function renderPage(
     </div>
   )
 
-  const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "ar"
+  const lang = componentData.fileData.frontmatter?.lang ?? cfg.locale?.split("-")[0] ?? "ar-SA"
   const direction = i18n(cfg.locale).direction ?? "rtl"
   const doc = (
     <html lang={lang} dir={direction}>
