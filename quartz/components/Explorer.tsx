@@ -116,7 +116,7 @@ export default ((userOpts?: Partial<Options>) => {
             stroke-linejoin="round"
             class="fold"
           >
-            <polyline points="6 9 12 15 18 9"></polyline>
+            <polyline points="18 9 12 15 6 9"></polyline>
           </svg>
         </button>
         <div id={id} class="explorer-content" aria-expanded={false} role="group">
