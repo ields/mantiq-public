@@ -41,7 +41,7 @@
   }
 
   & .fold {
-    margin-left: 0.5rem;
+    margin-left: 0.13rem;
     transition: transform 0.3s ease;
     opacity: 0.8;
   }
@@ -166,7 +166,7 @@ button.desktop-explorer {
     font-size: 0.95rem;
     font-weight: $semiBoldWeight;
     line-height: 1.5rem;
-    display: inline-flex;
+    display: inline-block;
   }
 
   & div > a:hover {
