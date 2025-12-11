@@ -36,7 +36,7 @@
   &.collapsed {
     flex: 0 1 1.2rem;
     & .fold {
-      transform: rotateZ(-90deg);
+      transform: rotateZ(90deg);
     }
   }
 
