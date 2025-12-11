@@ -207,7 +207,7 @@ button.desktop-explorer {
 }
 
 li:has(> .folder-outer:not(.open)) > .folder-container > svg {
-  transform: rotate(-90deg);
+  transform: rotate(90deg);
 }
 
 .folder-icon:hover {
