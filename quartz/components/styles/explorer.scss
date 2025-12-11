@@ -166,7 +166,7 @@ button.desktop-explorer {
     font-size: 0.95rem;
     font-weight: $semiBoldWeight;
     line-height: 1.5rem;
-    display: inline-block;
+    display: inline-flex;
   }
 
   & div > a:hover {
