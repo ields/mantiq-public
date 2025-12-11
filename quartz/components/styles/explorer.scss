@@ -220,7 +220,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
       flex: 0 0 34px;
 
       & > .explorer-content {
-        transform: translateX(-100vw);
+        transform: translateX(100vw);
         visibility: hidden;
       }
     }
