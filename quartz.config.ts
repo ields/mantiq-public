@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "المنطق",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "ar-SA",
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
@@ -29,7 +29,7 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
+          light: "rgba(250, 248, 248, 1)",
           lightgray: "#e5e5e5",
           gray: "#b8b8b8",
           darkgray: "#4e4e4e",
@@ -40,15 +40,15 @@ const config: QuartzConfig = {
           textHighlight: "#fff23688",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "rgba(13, 17, 23, 1)",
+          lightgray: "#161b22",
+          gray: "#30363d",
+          darkgray: "#8b949e",
+          dark: "#c9d1d9",
+          secondary: "#1fe0d0ff",
+          tertiary: "#32857aff",
+          highlight: "rgba(56, 139, 253, 0.15)",
+          textHighlight: "#bb800966",
         },
       },
     },
@@ -95,3 +95,15 @@ const config: QuartzConfig = {
 }
 
 export default config
+
+/// darkMode: {
+//  light: "#0d1117",              // main background
+//  lightgray: "#161b22",          // secondary background / cards
+//  gray: "#30363d",               // borders / subtle separators
+//  darkgray: "#8b949e",           // muted text
+//  dark: "#c9d1d9",               // main text color
+// secondary: "#58a6ff",          // primary accent / links
+//  tertiary: "#3fb950",           // secondary accent / success
+//  highlight: "rgba(56, 139, 253, 0.15)", // selection / hover highlight
+//  textHighlight: "#bb800966",    // inline text highlight
+//}

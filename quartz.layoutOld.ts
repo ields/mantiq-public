@@ -6,36 +6,7 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [], // Add DynamicNav to header to show section links
   afterBody: [],
-  footer: Component.Footer({
-    links: {},
-    sections: [
-      {
-        title: "للتَّصويب والإضافات",
-        color: "#1fe0d0ff", // Secondary
-        links: {
-          "البريد": "mailto:fayram@mailfence.com",
-        },
-      },
-      {
-        title: "منصات الشيخ عبد الحميد التركماني",
-        color: "#1fe0d0ff", // Secondary
-        links: {
-          تيليجرام: "https://t.me/AbdHamidTurkmen",
-          " فيس بوك": "https://www.facebook.com/abdulhameedturkumani/",
-          "إكس": "https://x.com/HameedTurkmani?s=09",
-        },
-      },
-      {
-        title: "مصادر ",
-        color: "#1fe0d0ff", // Secondary
-        links: {
-          Blog: "/blog",
-          "Privacy Policy": "/privacy",
-          License: "/license",
-        },
-      },
-    ],
-  }),
+  footer: Component.Footer(),
 }
 /* footer: Component.Footer({
     links: {

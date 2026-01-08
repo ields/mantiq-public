@@ -44,3 +44,14 @@ export async function fetchCanonical(url: URL): Promise<Response> {
   const [_, redirect] = text.match(canonicalRegex) ?? []
   return redirect ? fetch(`${new URL(redirect, url)}`) : res
 }
+
+export function styleText(color: string, text: string): string {
+  // Example implementation using ANSI escape codes for terminal colors
+  const colors: Record<string, string> = {
+    green: "\x1b[32m",
+    yellow: "\x1b[33m",
+    red: "\x1b[31m",
+    reset: "\x1b[0m",
+  };
+  return `${colors[color] || ""}${text}${colors.reset}`;
+}

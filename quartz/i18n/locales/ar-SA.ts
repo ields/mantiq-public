@@ -3,7 +3,7 @@ import { Translation } from "./definition"
 export default {
   propertyDefaults: {
     title: "غير معنون",
-    description: "لم يتم تقديم أي وصف",
+    description: "لم يُقديم أيُّ وصف",
   },
   direction: "rtl" as const,
   components: {

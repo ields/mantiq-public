@@ -165,7 +165,7 @@ a {
 
     & li:has(> input[type="checkbox"]) {
       list-style-type: none;
-      padding-left: 0;
+      padding-right: 0;
     }
 
     & li:has(> input[type="checkbox"]:checked) {
@@ -295,12 +295,12 @@ a {
         margin-right: 0;
       }
       @media all and ($mobile) {
-        margin-right: 0;
+        margin-right:0;
         margin-left: 0;
       }
     }
     & footer {
-      margin-left: 0;
+      margin-right: 0;
     }
   }
 }

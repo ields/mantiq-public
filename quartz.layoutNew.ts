@@ -10,24 +10,26 @@ export const sharedPageComponents: SharedLayout = {
     links: {},
     sections: [
       {
-        title: "للتَّصويب والإضافات",
-        color: "#1fe0d0ff", // Secondary
+        title: "Documentation",
+        color: "#e89217", // Orange
         links: {
-          "البريد": "mailto:fayram@mailfence.com",
+          "Getting Started": "/",
+          API: "/docs/api",
+          "Configuration": "/docs/config",
         },
       },
       {
-        title: "منصات الشيخ عبد الحميد التركماني",
-        color: "#1fe0d0ff", // Secondary
+        title: "Community",
+        color: "#176de8", // Blue
         links: {
-          تيليجرام: "https://t.me/AbdHamidTurkmen",
-          " فيس بوك": "https://www.facebook.com/abdulhameedturkumani/",
-          "إكس": "https://x.com/HameedTurkmani?s=09",
+          Discord: "https://discord.gg",
+          Forum: "https://forum.example.com",
+          "Contact Us": "mailto:hello@example.com",
         },
       },
       {
-        title: "مصادر ",
-        color: "#1fe0d0ff", // Secondary
+        title: "Resources",
+        color: "#4caf50", // Green
         links: {
           Blog: "/blog",
           "Privacy Policy": "/privacy",
