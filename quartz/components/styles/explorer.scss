@@ -97,7 +97,7 @@ button.mobile-explorer,
 button.desktop-explorer {
   background-color: transparent;
   border: none;
-  text-align: right;
+  text-align: left;
   cursor: pointer;
   padding: 0;
   color: var(--dark);
@@ -157,7 +157,7 @@ button.desktop-explorer {
 
   .folder-outer > ul {
     overflow: hidden;
-    margin-right: 6px;
+    margin-right: 5px;
     padding-right: 0.8rem;
     border-right: 1px solid var(--lightgray);
   }
@@ -207,7 +207,7 @@ button.desktop-explorer {
 }
 
 .folder-icon {
-  margin-left: 6px;
+  margin-left: 5px;
   color: var(--secondary);
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -226,7 +226,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 .explorer {
   @media all and ($mobile) {
     &.collapsed {
-      flex: 0 0 34px;
+      flex: 34px 0 0;
 
       & > .explorer-content {
         transform: translateX(100vw);
@@ -235,7 +235,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
     }
 
     &:not(.collapsed) {
-      flex: 0 0 34px;
+      flex: 34px 0 0;
 
       & > .explorer-content {
         transform: translateX(0);

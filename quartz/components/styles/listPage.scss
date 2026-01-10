@@ -3,7 +3,7 @@
 ul.section-ul {
   list-style: none;
   margin-top: 2em;
-  padding-left: 0;
+  padding-right: 0;
 }
 
 li.section-li {
@@ -24,7 +24,7 @@ li.section-li {
     }
 
     & .meta {
-      margin: 0 1em 0 0;
+      margin:  0 0 0 1em;
       opacity: 0.6;
     }
   }

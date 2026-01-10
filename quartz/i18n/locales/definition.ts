@@ -21,7 +21,7 @@ export interface Translation {
     title: string
     description: string
   }
-  direction?: "rtl" | "ltr"
+  direction?: "rtl" 
   components: {
     callout: CalloutTranslation
     backlinks: {

@@ -18,7 +18,7 @@
     font-family: inherit;
     font-size: inherit;
     height: 2rem;
-    padding: 0 -1rem 0 0;
+    padding:  0 0 0 1rem;
     display: flex;
     align-items: center;
     text-align: inherit;
@@ -230,8 +230,8 @@
             & > ul > li > p {
               border-radius: 8px;
               background-color: var(--highlight);
-              padding: 0.2rem 0.4rem;
-              margin: 0 0.1rem;
+              padding: 0 0;
+              margin: 0;
               line-height: 1.4rem;
               font-weight: $boldWeight;
               color: var(--secondary);
