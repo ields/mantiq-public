@@ -26,12 +26,12 @@ export const sharedPageComponents: SharedLayout = {
         },
       },
       {
-        title: "مصادر ",
+        title: " مصادر متعلقة",
         color: "#1fe0d0ff", // Secondary
         links: {
-          Blog: "/blog",
-          "Privacy Policy": "/privacy",
-          License: "/license",
+          "Open Logic Project": "https://builds.openlogicproject.org",
+          "Art of Reasoning": "https://art-of-reasoning.huygens.knaw.nl",
+          "Logic Matters": "https://www.logicmatters.net",
         },
       },
     ],
