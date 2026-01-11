@@ -95,11 +95,12 @@
 
 button.mobile-explorer,
 button.desktop-explorer {
-  background-color: transparent;
+  background-color: var(--tertiary);
   border: none;
   text-align: left;
   cursor: pointer;
   padding: 0;
+  margin-bottom: 1px;
   color: var(--dark);
   display: flex;
   align-items: center;
@@ -207,7 +208,7 @@ button.desktop-explorer {
 }
 
 .folder-icon {
-  margin-left: 5px;
+  margin-left: 5px; // Under Explorer icon.
   color: var(--secondary);
   cursor: pointer;
   transition: transform 0.3s ease;
