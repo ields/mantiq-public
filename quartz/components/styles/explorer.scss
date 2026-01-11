@@ -32,9 +32,9 @@
   overflow-y: hidden;
 
   min-height: 1.2rem;
-  flex: 1 0 auto;
+  flex: 0 1 auto;
   &.collapsed {
-    flex: 0 1 1.9rem;
+    flex: 0 1 1.2rem;
     & .fold {
       transform: rotateZ(90deg);
     }
@@ -100,7 +100,6 @@ button.desktop-explorer {
   text-align: left;
   cursor: pointer;
   padding: 0;
-  margin-bottom: 1px;
   color: var(--dark);
   display:flex;
   align-items: center;
@@ -118,7 +117,7 @@ button.desktop-explorer {
   list-style: none;
   overflow: hidden;
   overflow-y: auto;
-  margin-top: 0.5rem;
+  margin-top: 3rem;
 
   & ul {
     list-style: none;
