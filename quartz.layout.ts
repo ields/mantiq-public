@@ -22,7 +22,7 @@ export const sharedPageComponents: SharedLayout = {
         links: {
           تيليجرام: "https://t.me/AbdHamidTurkmen",
           " فيس بوك": "https://www.facebook.com/abdulhameedturkumani/",
-          "إكس": "https://x.com/HameedTurkmani?s=09",
+          "إكس": "https://x.com/AbdHamidTurkmen",
         },
       },
       {

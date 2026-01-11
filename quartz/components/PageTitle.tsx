@@ -19,9 +19,7 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
     </h2>
   )
 }
-   
-
-PageTitle.css = `
+   PageTitle.css = `
 .page-title {
   font-size: 1.75rem;
   margin: 0;
@@ -44,7 +42,7 @@ PageTitle.css = `
 }
 
 .page-title a:hover .Logo {
-  opacity: 0.7; /* Fades logo slightly on hover */
+  opacity: 100;  /* Fades logo slightly on hover */
 }
 `
 
