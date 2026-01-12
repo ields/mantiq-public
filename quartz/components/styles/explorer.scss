@@ -96,9 +96,8 @@
 button.mobile-explorer,
 button.desktop-explorer {
   background-color: transparent;
-  border-width: 45px;
-  border-style:inherit;
-  text-align: left;
+  border:0;
+  text-align: right;
   cursor: pointer;
   padding: 0;
   color: var(--dark);
@@ -186,7 +185,7 @@ button.desktop-explorer {
   & div > button {
     color: var(--dark);
     background-color: transparent;
-    border: none;
+    border:none;
     text-align: right;
     cursor: pointer;
     padding-left: 0;
