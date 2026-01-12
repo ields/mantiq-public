@@ -31,12 +31,16 @@
   flex-direction: column;
   overflow-y: hidden;
 
-  min-height: 1.2rem;
+  min-height: auto;
   flex: 0 1 auto;
   &.collapsed {
-    flex: 0 1 1.2rem;
+    flex: 0 1 auto;
     & .fold {
       transform: rotateZ(90deg);
+    }
+
+    & > .explorer-content {
+      display: none;
     }
   }
 
@@ -96,7 +100,7 @@
 button.mobile-explorer,
 button.desktop-explorer {
   background-color: transparent;
-  border:0;
+  border:none;
   text-align: right;
   cursor: pointer;
   padding: 0;
