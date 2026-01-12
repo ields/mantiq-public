@@ -31,15 +31,15 @@
   flex-direction: column;
   overflow-y: hidden;
 
-  min-height: auto;
+  min-height: auto; // 1.2rem;
   flex: 0 1 auto;
   &.collapsed {
-    flex: 0 1 auto;
+    flex: 0 1 auto; // 0 1 1.2rem;
     & .fold {
       transform: rotateZ(90deg);
     }
 
-    & > .explorer-content {
+    & > .explorer-content { // ADDED
       display: none;
     }
   }
