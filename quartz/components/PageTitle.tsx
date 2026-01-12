@@ -31,12 +31,12 @@ const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzCompo
 }
 
 .Logo {
-  max-height: 80px;
-  min-height: 35px;
-  max-width: 100px;
-  min-width: 35px;
+  max-height: 75px;
+  min-height: 33px;
+  max-width: 75px;
+  min-width: 33px;
   margin: 0;
-  margin-top:16px;
+  margin-top:10px;
   transition: opacity 0.12s ease; /* Smooth fade transition on hover */
   cursor: pointer; /* Shows clickable pointer */
 }

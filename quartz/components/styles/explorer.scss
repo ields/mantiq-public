@@ -95,9 +95,8 @@
 
 button.mobile-explorer,
 button.desktop-explorer {
-  background-color: transparent;
-  border-bottom:none;
-  
+  background-color: var(--tertiary);
+  border:hidden;
   text-align: left;
   cursor: pointer;
   padding: 0;
