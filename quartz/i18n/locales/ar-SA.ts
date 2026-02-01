@@ -31,7 +31,7 @@ export default {
       darkMode: "الوضع الليلي",
     },
     explorer: {
-      title: "المستعرض",
+      title: "المُستعرِض",
     },
     readerMode: {
       title: "وضع القارئ",
