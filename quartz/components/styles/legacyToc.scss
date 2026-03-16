@@ -7,7 +7,7 @@ details.toc {
     }
 
     & > * {
-      padding-left: 0.25rem;
+      padding-right: 0.25rem; //left
       display: inline-block;
       margin: 0;
     }
@@ -21,7 +21,7 @@ details.toc {
 
   @for $i from 1 through 6 {
     & .depth-#{$i} {
-      padding-left: calc(1rem * #{$i});
+      padding-right: calc(1rem * #{$i}); //left
     }
   }
 }

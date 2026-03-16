@@ -28,7 +28,7 @@ TagList.css = `
 .tags {
   list-style: none;
   display: flex;
-  padding-left: 0;
+  padding-right: 0;
   gap: 0.4rem;
   margin: 1rem 0;
   flex-wrap: wrap;

@@ -12,6 +12,7 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
+  
     analytics: {
       provider: "plausible",
     },
@@ -23,32 +24,34 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "sans-serif",
-        body: "Source Sans Pro",
+        header: "Schibsted Grotesk",
+        body: "monospace",
         code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
-          light: "rgba(250, 248, 248, 1)",
+          light: "#faf8f8ff",
           lightgray: "#e5e5e5",
           gray: "#b8b8b8",
           darkgray: "#4e4e4e",
           dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          secondary: "#124669ff",
+          tertiary: "#469c86ff",
+          highlight: "#8f9fa926",
           textHighlight: "#fff23688",
+          hovercolor:"#6e09b6ff"
         },
         darkMode: {
-          light: "#050505ff",
+          light: "rgba(15, 16, 16, 1)", //#0e1010ff"
           lightgray: "#202021ff",
           gray: "#30363d",
-          darkgray: "#8b949e",
+          darkgray: "#b7b9bdff",
           dark: "#c9d1d9",
-          secondary: "rgba(31, 224, 208, 1)",
-          tertiary: "#32857aff",
+          secondary: "#00e5bf",
+          tertiary: "#169681ff", //#32857aff //#d20cffff
           highlight: "rgba(56, 139, 253, 0.15)",
-          textHighlight: "#bb800966",
+          textHighlight: "#2b1787ff",
+          hovercolor:"#00fac8"
         },
       },
     },

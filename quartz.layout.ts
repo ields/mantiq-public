@@ -2,6 +2,7 @@ import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
 
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -35,7 +36,15 @@ export const sharedPageComponents: SharedLayout = {
           "Logic Matters": "https://www.logicmatters.net",
         },
       },
-    ],
+
+      {
+        title: " محتوى الصفحة",
+        color: "#1fe0d0ff", // Secondary
+        links: {
+          "Markdown[.md]": "https://github.com/ields/logicledge-content.git",
+        },
+      },
+    ]
   }),
 }
 /* footer: Component.Footer({
@@ -60,6 +69,7 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.PageTitle(),
     Component.MobileOnly(Component.Spacer()),
+    
     Component.Flex({
       components: [
         {
@@ -68,9 +78,78 @@ export const defaultContentPageLayout: PageLayout = {
         },
         { Component: Component.Darkmode() },
         { Component: Component.ReaderMode() },
+        
       ],
     }),
-    Component.Explorer(),
+    
+     
+Component.Explorer({
+   // checking this is the right section
+  folderClickBehavior: "collapse",
+  folderDefaultState: "collapsed",
+  useSavedState: true,
+  // COPY FROM HERE DOWN ---------
+  sortFn: (a, b) => {
+    // 1. DEFINE YOUR CUSTOM ORDER HERE
+    // specific folder names get specific numbers (lower = higher up)
+    const nameOrderMap: Record<string, number> = {
+      "المنطق [0]": 1,     // Change "Start Here" to your first folder name
+      "المِرْقَاة": 2,    // Change to your second folder
+      "التَّهذِيب": 3,
+      "الشَّمْسِيَّة": 4,        // Change to your third
+      "العلم الحصولي": 5,
+      "التصور": 6,
+      "التصديق": 7,
+      "الحجة": 8,
+      "Archives": 100,     // Force this to the bottom
+
+    
+      // --- Inside "المنطق [0]" Folder ---
+      "مقدمة": 1,  // This will sort to the top *inside* Projects
+      "التصورات": 2,
+      "التصديقات": 3,
+      "Archived": 99,        // This will sink to the bottom *inside* Projects
+
+      "التعريف": 1,
+      "موضوعه":2,
+      "وجهُ الحاجةِ":3,
+      "مباحث الألفاظ": 4,
+      // --- Inside "Areas" Folder ---
+
+      "القَضايا": 1,
+      "الحُجة": 2,
+      "Health": 1,
+      "Finance": 2,
+      
+
+      // --- Specific Files ---
+      "Start Here": 0,
+    }
+
+    let orderA = nameOrderMap[a.displayName] ?? 999
+    let orderB = nameOrderMap[b.displayName] ?? 999
+
+    // 2. Apply the custom order
+    if (orderA !== orderB) {
+      return orderA - orderB
+    }
+
+    // // 3. CORRECTED LOGIC: Use .isFolder instead of checking children manually
+
+    if (a.isFolder && !b.isFolder) {
+      return -1 // Folder comes before File
+    }
+    if (!a.isFolder && b.isFolder) {
+      return 1 // File comes after Folder
+    }
+
+    // 4. Everything else sorts Alphabetically
+    return a.displayName.localeCompare(b.displayName, undefined, {
+      numeric: true,
+      sensitivity: "base",
+    })
+  },
+}),
   ],
   right: [
     Component.Graph(),

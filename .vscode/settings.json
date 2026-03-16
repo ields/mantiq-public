@@ -1,0 +1,13 @@
+{
+    "customFileOrder.rules": {
+        "/Users/macields/Vaults/mantiq-public/content/المنطق [0]": {
+            "order": [
+                " مقدمة",
+                "التصورات",
+                "التصديقات",
+                "المرقاة"
+            ],
+            "type": "manual"
+        }
+    }
+}

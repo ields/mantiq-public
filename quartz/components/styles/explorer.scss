@@ -32,9 +32,9 @@
   overflow-y: hidden;
 
   min-height: auto; // 1.2rem;
-  flex: 0 1 auto;
+  flex: auto;
   &.collapsed {
-    flex: 0 1 auto; // 0 1 1.2rem;
+    flex:auto; // 0 1 1.2rem;
     & .fold {
       transform: rotateZ(90deg);
     }
