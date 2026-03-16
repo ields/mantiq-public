@@ -1,5 +1,5 @@
 ---
-title: " بداءة"
+title: " بَدْء"
 tags:
 cssclasses:
 ---
