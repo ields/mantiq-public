@@ -8,7 +8,7 @@
         img.style.filter = "brightness(1.2) saturate(1.1)";
       } else {
         // Light mode: darken slightly for light background
-        img.style.filter = "brightness(0.3) saturate(0.8)";
+        img.style.filter = "brightness(0.3) saturate(1.2)";
         
       }
     });
