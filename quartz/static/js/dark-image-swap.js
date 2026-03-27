@@ -4,12 +4,11 @@
     const imgs = document.querySelectorAll("img.theme-image");
     imgs.forEach((img) => {
       if (isDark) {
-        // Dark mode: lighten image for dark background
-        img.style.filter = "brightness(1.2) saturate(1.1)";
+        // Dark mode: shift to teal/cyan color
+        img.style.filter = "brightness(3.7)  hue-rotate(360deg)";
       } else {
-        // Light mode: darken slightly for light background
-        img.style.filter = "brightness(0.3) saturate(1.2)";
-        
+        // Light mode: shift to blue color
+        img.style.filter = "hue-rotate(-225deg) brightness(0.5)";
       }
     });
   }
