@@ -101,6 +101,9 @@ Component.Explorer({
       "التصور": 6,
       "التصديق": 7,
       "الحجة": 8,
+      "الكلي": 9,
+      "الجزئي":10,
+      "المُعرِّف":11,
       "Archives": 100,     // Force this to the bottom
 
     
@@ -116,8 +119,6 @@ Component.Explorer({
       "مباحث الألفاظ": 4,
       // --- Inside "Areas" Folder ---
 
-      "القَضايا": 1,
-      "الحُجة": 2,
       "Health": 1,
       "Finance": 2,
       
