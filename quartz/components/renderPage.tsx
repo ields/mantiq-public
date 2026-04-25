@@ -291,7 +291,7 @@ export function renderPage(
             <Footer {...componentData} />
           </Body>
         </div>
-        <script src="/static/js/dark-image-swap.js" defer></script> // added 19 Mar 2026 11:30:22 Pm
+        <script src="/static/js/dark-image-swap.js" defer></script>
       </body>
       {pageResources.js
         .filter((resource) => resource.loadTime === "afterDOMReady")
