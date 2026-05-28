@@ -41,7 +41,7 @@ export const sharedPageComponents: SharedLayout = {
         title: " محتوى الصفحة",
         color: "#1fe0d0ff", // Secondary
         links: {
-          "Markdown[.md]": "https://github.com/ields/logicledge-content.git",
+          "Markdown": "https://github.com/ields/logicledge-content.git",
         },
       },
     ]
@@ -103,7 +103,12 @@ Component.Explorer({
       "الحجة": 8,
       "الكلي": 9,
       "الجزئي":10,
-      "المُعرِّف":11,
+      "الكليات":11,
+      "التعريف":12,
+      "الجنس": 13,
+      "الفصل": 14,
+      "الحد": 15,
+      "الرسم": 16,
       "Archives": 100,     // Force this to the bottom
 
     
@@ -111,9 +116,11 @@ Component.Explorer({
       "مقدمة": 1,  // This will sort to the top *inside* Projects
       "التصورات": 2,
       "التصديقات": 3,
+      "القضايا": 3.1,
+      "الحُجة":3.2,
       "Archived": 99,        // This will sink to the bottom *inside* Projects
 
-      "التعريف": 1,
+      "": 1,
       "موضوعه":2,
       "وجهُ الحاجةِ":3,
       "مباحث الألفاظ": 4,
