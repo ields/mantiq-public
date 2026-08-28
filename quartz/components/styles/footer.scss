@@ -17,7 +17,7 @@ footer {
        /* Shrink to fit the widest element (Title or Link) */
 
       margin: 0 auto;  /* Center the whole group in the grid cell */
-       @media (max-width: 1155px){
+       @media (min-width: 200px) and (max-width: 2500px){
        margin-right: 2rem;
        }
       /* 3. ALIGN CONTENT INSIDE THE GROUP */
