@@ -28,7 +28,7 @@ export const sharedPageComponents: SharedLayout = {
         },
       },
       {
-        title: " مصادر متعلقة",
+        title: "مصادر متعلقة",
         color: "#1fe0d0ff", // Secondary
         links: {
           "Open Logic Project": "https://builds.openlogicproject.org",
@@ -36,9 +36,8 @@ export const sharedPageComponents: SharedLayout = {
           "Logic Matters": "https://www.logicmatters.net",
         },
       },
-
       {
-        title: " محتوى الصفحة",
+        title: "محتوى الصفحة",
         color: "#1fe0d0ff", // Secondary
         links: {
           "Markdown": "https://github.com/ields/logicledge-content.git",

@@ -11,19 +11,15 @@ footer {
     gap: 0rem;
     margin-top: 2rem;
     padding-top: 2rem;
-    
-   
-    
-    /* 1. TARGET THE GRID ITEM (The parent of Title + Links) */
-    /* This assumes your columns are direct children (divs) of .footer-sections */
-    & > * {
-     
 
+    & > * {
       /* 2. SHRINK & CENTER THE GROUP */
        /* Shrink to fit the widest element (Title or Link) */
 
-      margin:0 auto ;  /* Center the whole group in the grid cell */
-      
+      margin: 0 auto;  /* Center the whole group in the grid cell */
+       @media (max-width: 1155px){
+       margin-right: 2rem;
+       }
       /* 3. ALIGN CONTENT INSIDE THE GROUP */
       /* Aligns Title and Links to the right edge */
       text-align: right;     /* Ensures text (like the Title) aligns right */
@@ -35,12 +31,8 @@ footer {
         /* A. SHRINK: Make the box only as wide as the content */
         width: fit-content; 
         
-        /* B. CENTER: Center the box within the grid cell */
-        /* This applies the margin: 0 auto ONLY on mobile */
-        margin: 0 ; 
-        
         /* C. ALIGN: Push content inside the box to the right */
-        align-items: flex-start; 
+        align-items: flex-start;
         text-align: right; 
       }
     }
