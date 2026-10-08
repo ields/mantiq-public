@@ -13,25 +13,22 @@ footer {
     padding-top: 2rem;
 
     & > * {
-      /* 2. SHRINK & CENTER THE GROUP */
-       /* Shrink to fit the widest element (Title or Link) */
-
-      margin: 0 auto;  /* Center the whole group in the grid cell */
-       @media (min-width: 200px) and (max-width: 2500px){
+      
+      margin: 0 auto;  
+       @media (min-width: 200px) and (max-width: 20px){
        margin-right: 2rem;
        }
-      /* 3. ALIGN CONTENT INSIDE THE GROUP */
-      /* Aligns Title and Links to the right edge */
-      text-align: right;     /* Ensures text (like the Title) aligns right */
+      
+      text-align: right;    
        @media (max-width: 800px) {
         
         display: flex;
         flex-direction: column;
         
-        /* A. SHRINK: Make the box only as wide as the content */
+       
         width: fit-content; 
         
-        /* C. ALIGN: Push content inside the box to the right */
+        
         align-items: flex-start;
         text-align: right; 
       }
